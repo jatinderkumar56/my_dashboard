@@ -1,0 +1,26 @@
+.home{
+    /* flex: 4; */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.homeWidgets{
+    /* display: flex;
+    margin: 20px; */
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .homeWidgets {
+    flex-direction: column;
+    
+  }
+  .home{
+    margin: 0;
+    padding: 0;
+  }
+}

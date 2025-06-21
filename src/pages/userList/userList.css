@@ -1,0 +1,61 @@
+.userList {
+  flex: 4;
+}
+
+.userListUser {
+  display: flex;
+  align-items: center;
+}
+
+.userListImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.userListEdit{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.userListDelete{
+    color: red;
+    cursor: pointer;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .userList {
+    padding: 10px;
+    overflow-x: auto; /* Adds horizontal scroll if needed */
+  }
+
+  .userListUser.img {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .userListEdit {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-right: 10px;
+    
+  }
+
+  .userListImg  {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+  }
+
+  .userListDelete {
+    font-size: 18px;
+  }
+}

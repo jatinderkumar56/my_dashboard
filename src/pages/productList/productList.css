@@ -1,0 +1,72 @@
+.productList{
+  
+  flex: 4;
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scroll if needed */
+}
+
+.productListItem{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 768px) {
+  .productList {
+    overflow-x: auto;
+  }
+}
+
+
+.productListImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+.productListEdit{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.productListDelete{
+    color: red;
+    cursor: pointer;
+}
+/* Base styles remain the same */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .productList {
+    padding: 10px;
+    overflow-x: auto; /* Adds horizontal scroll if needed */
+  }
+
+  .productListItem.img {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .productListEdit {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-right: 10px;
+    
+  }
+
+  .productListImg {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+  }
+
+  .productListDelete {
+    font-size: 18px;
+  }
+}
